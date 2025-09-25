@@ -1,0 +1,306 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fertilizer Products</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+
+    .fertilizer-products {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 15px;
+    }
+
+    .fertilizer-products h2 {
+      text-align: center;
+      color: #2b7a0b;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-height: 370px;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .img-container {
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .product-img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: contain;
+      transition: transform 0.4s ease;
+      border-radius: 12px;
+    }
+
+    .product-card:hover .product-img {
+      transform: scale(1.12);
+    }
+
+    .product-card h6 {
+      margin: 12px 0 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #2b7a0b;
+    }
+
+    .product-desc {
+      font-size: 0.85rem;
+      color: #555;
+      min-height: 45px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .price span {
+      color: #999;
+      margin-left: 5px;
+      font-size: 0.8rem;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn {
+      border: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      font-size: 0.85rem;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .btn-success {
+      background: #2b7a0b;
+      color: white;
+    }
+
+    .btn-outline {
+      background: #eee;
+      color: #444;
+    }
+
+    @media (max-width: 500px) {
+      .product-card h6 {
+        font-size: 0.9rem;
+      }
+      .product-desc {
+        font-size: 0.8rem;
+      }
+      .price {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="fertilizer-products">
+    <h2>Chelated fertilizer</h2>
+    <div class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="img-container">
+          <img src="advance/complete dose.png" alt="Phoenix Ultra Plus" class="product-img">
+        </div>
+        <h6>Phoenix Ultra Plus</h6>
+        <p class="product-desc">Complete dose fertilizer that boosts crop yield and ensures balanced nutrition.</p>
+        <div class="price">₹799 
+          <span><del>₹999</del> (20% OFF)</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-success">🛒</button>
+          <button class="btn btn-outline">❤️</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="img-container">
+          <img src="advance/crop x.png" alt="Crop X Fertilizer" class="product-img">
+        </div>
+        <h6>Crop X Fertilizer</h6>
+        <p class="product-desc">Rich in micronutrients, perfect for enhancing crop strength and growth.</p>
+        <div class="price">₹499 
+          <span><del>₹599</del> (15% OFF)</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-success">🛒</button>
+          <button class="btn btn-outline">❤️</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="img-container">
+          <img src="advance/gb ultra plus.png" alt="GB Ultra Plus" class="product-img">
+        </div>
+        <h6>GB Ultra Plus</h6>
+        <p class="product-desc">Advanced formula fertilizer that improves soil health and crop immunity.</p>
+        <div class="price">₹899 
+          <span><del>₹1099</del> (18% OFF)</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-success">🛒</button>
+          <button class="btn btn-outline">❤️</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="img-container">
+          <img src="advance/ferti max.png" alt="Ferti Max" class="product-img">
+        </div>
+        <h6>Ferti Max</h6>
+        <p class="product-desc">High-performance fertilizer for maximum yield and consistent results.</p>
+        <div class="price">₹699 
+          <span><del>₹899</del> (22% OFF)</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-success">🛒</button>
+          <button class="btn btn-outline">❤️</button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <div class="img-container">
+          <img src="advance/green grow.png" alt="Green Grow" class="product-img">
+        </div>
+        <h6>Green Grow</h6>
+        <p class="product-desc">Eco-friendly fertilizer promoting sustainable farming and healthy crops.</p>
+        <div class="price">₹599 
+          <span><del>₹799</del> (25% OFF)</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-success">🛒</button>
+          <button class="btn btn-outline">❤️</button>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <div class="img-container">
+          <img src="advance/nutra plus.png" alt="Nutra Plus" class="product-img">
+        </div>
+        <h6>Nutra Plus</h6>
+        <p class="product-desc">Specialized in nutrient absorption to help crops grow faster and healthier.</p>
+        <div class="price">₹749 
+          <span><del>₹949</del> (21% OFF)</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-success">🛒</button>
+          <button class="btn btn-outline">❤️</button>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <div class="img-container">
+          <img src="advance/harvest pro.png" alt="Harvest Pro" class="product-img">
+        </div>
+        <h6>Harvest Pro</h6>
+        <p class="product-desc">Designed for all seasons, improves crop resistance and quality yield.</p>
+        <div class="price">₹820 
+          <span><del>₹1020</del> (20% OFF)</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-success">🛒</button>
+          <button class="btn btn-outline">❤️</button>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <div class="img-container">
+          <img src="advance/agri boost.png" alt="Agri Boost" class="product-img">
+        </div>
+        <h6>Agri Boost</h6>
+        <p class="product-desc">Boosts root strength and provides balanced nutrition to every crop stage.</p>
+        <div class="price">₹680 
+          <span><del>₹850</del> (20% OFF)</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-success">🛒</button>
+          <button class="btn btn-outline">❤️</button>
+        </div>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card">
+        <div class="img-container">
+          <img src="advance/soil rich.png" alt="Soil Rich" class="product-img">
+        </div>
+        <h6>Soil Rich</h6>
+        <p class="product-desc">Improves soil fertility, increases water retention, and supports plant health.</p>
+        <div class="price">₹560 
+          <span><del>₹720</del> (22% OFF)</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-success">🛒</button>
+          <button class="btn btn-outline">❤️</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    // Add to Bag Action
+    document.querySelectorAll('.btn-success').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert('✅ Product added to bag!');
+      });
+    });
+
+    // Wishlist Action
+    document.querySelectorAll('.btn-outline').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert('❤️ Product added to wishlist!');
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+

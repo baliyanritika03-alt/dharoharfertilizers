@@ -1,0 +1,69 @@
+<!-- product1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phoenix Ultra Plus Fertilizer</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f8f9fa; margin:0; padding:20px; }
+    .container { max-width:1000px; margin:auto; background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.1); }
+    .row { display:flex; flex-wrap:wrap; gap:20px; }
+    .col { flex:1; min-width:300px; }
+    .main-img { width:100%; max-width:400px; border-radius:12px; }
+    .thumbs img { width:60px; height:60px; object-fit:cover; border-radius:8px; margin-right:8px; cursor:pointer; border:2px solid transparent; }
+    .thumbs img:hover { border:2px solid #2b7a0b; }
+    h2 { color:#2b7a0b; }
+    .price { font-size:1.2rem; color:#d9534f; margin:10px 0; }
+    .price span { color:#666; margin-left:8px; font-size:0.9rem; }
+    .btn { padding:10px 20px; border:none; border-radius:8px; margin-right:10px; cursor:pointer; }
+    .btn-success { background:#2b7a0b; color:#fff; }
+    .btn-outline { background:#eee; color:#333; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- Left: Images -->
+      <div class="col">
+        <img src="advance/complete dose.png" class="main-img" id="mainImage" alt="Phoenix Ultra Plus">
+        <div class="thumbs">
+          <img src="advance/crop x.png" onclick="changeImage(this)">
+          <img src="advance/gb ultra plus.png" onclick="changeImage(this)">
+          <img src="advance/gb ultra.png" onclick="changeImage(this)">
+        </div>
+      </div>
+
+      <!-- Right: Info -->
+      <div class="col">
+        <h2>Phoenix Ultra Plus Fertilizer</h2>
+        <p> A complete dose fertilizer designed to maximize crop yield, improve soil health, and ensure balanced plant nutrition for sustainable farming.</p>
+        <div class="price">₹799 <span><del>₹999</del> (20% OFF)</span></div>
+
+        <label><b>Choose Size:</b></label><br>
+        <button class="btn btn-outline">1kg</button>
+        <button class="btn btn-outline">5kg</button>
+        <button class="btn btn-outline">10kg</button>
+
+        <div style="margin-top:20px;">
+          <button class="btn btn-success">🛒 Add to Bag</button>
+          <button class="btn btn-outline">❤️ Wishlist</button>
+        </div>
+
+        <div style="margin-top:20px;">
+          <label><b>Delivery Options</b></label><br>
+          <input type="text" placeholder="Enter Pincode" style="padding:8px; border-radius:8px; border:1px solid #ccc;">
+          <button class="btn btn-outline">Check</button>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:30px;"><a href="index.html">⬅ Back to Products</a></p>
+  </div>
+
+  <script>
+    function changeImage(thumb) {
+      document.getElementById("mainImage").src = thumb.src;
+    }
+  </script>
+</body>
+</html>
